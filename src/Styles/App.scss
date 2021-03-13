@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 3rem;
+  color: #f48f31;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: lighter;
+  color: #f48f31;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+  color: #2e5979;
+}
+
+button {
+  margin-right: 3rem;
+  cursor: pointer;
+  color: #407ca7;
+  background: rgba(255, 255, 255, 0);
+  font-size: 0.8rem;
+  border: 1px solid #407ca7;
+  border-radius: 15px;
+  padding: 0.75rem;
+  transition: all 0.5s ease;
+}
+button:hover {
+  background: #407ca7;
+  color: white;
+}
+
+.App {
+  display: flex;
+}
+
+.page-container {
+  width: 100%;
+  display: block;
+}
+
+@media only screen and (max-width: 920px) {
+  .App {
+    display: block;
+  }
+}
+
+@import "./Home";
+@import "./AboutMePage";
+@import "./ContactPage";
+@import "./WorkSection";
+@import "./BlogSection";
+@import "./Hero";
+@import "./Nav";
+@import "./MobileNav";
+@import "./BlogAllPosts";
+@import "./BlogOnePost";
+@import "./Carousel";

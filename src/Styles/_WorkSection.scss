@@ -1,0 +1,101 @@
+.work-section {
+  padding: 6rem 0rem 6rem 0rem;
+  h2 {
+    display: block;
+  }
+
+  .project {
+    display: flex;
+    padding: 3rem 0rem 1rem 0rem;
+    img {
+      max-height: 300px;
+      max-width: 300px;
+      object-fit: cover;
+      border-radius: 3px;
+      box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.2);
+      margin-right: 3rem;
+    }
+    .project-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h3 {
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: #2e5979;
+      }
+      button {
+        margin: 0rem 1.5rem 1rem 0rem;
+      }
+      button:hover {
+        background: #407ca7;
+        .github {
+          filter: brightness(0) saturate(100%) invert(96%) sepia(100%)
+            saturate(22%) hue-rotate(50deg) brightness(107%) contrast(100%);
+        }
+      }
+      .project-languages {
+        padding: 2rem 0rem;
+      }
+    }
+    .orange {
+      color: #f48f31;
+    }
+    .code-links {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .github {
+      height: 0.75rem;
+      width: 0.75rem;
+      margin-left: 3px;
+      transition: all 0.5s ease;
+      position: relative;
+      top: 2px;
+      filter: brightness(0) saturate(100%) invert(44%) sepia(50%) saturate(498%)
+        hue-rotate(162deg) brightness(92%) contrast(92%);
+    }
+
+    ul {
+      list-style: none;
+      line-height: 1.5rem;
+    }
+    li {
+      color: #2e5979;
+      font-family: "Lato", sans-serif;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .project {
+      img {
+        flex-shrink: 1;
+      }
+      .project-info {
+        justify-content: flex-start;
+        button {
+          margin: 0;
+        }
+        .project-languages {
+          display: none;
+        }
+      }
+      .code-links {
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 0.5rem;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .project {
+      flex-direction: column;
+      .project-info {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}

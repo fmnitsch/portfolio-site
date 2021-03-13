@@ -1,0 +1,44 @@
+.blog-container {
+  img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .blog-header {
+    min-height: 30vh;
+    width: 100%;
+    padding: 4rem 2rem 2rem 3rem;
+    background: #f48f31;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    h1 {
+      margin-bottom: 1rem;
+      color: white;
+    }
+    p {
+      color: white;
+    }
+  }
+  .posts-container {
+    margin: 5rem auto;
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    flex-wrap: wrap;
+  }
+  .single-post-container {
+    margin: 0rem 3rem 3rem 0rem;
+  }
+  .image-title-wraper {
+    overflow: hidden;
+  }
+  .title {
+  }
+  p {
+    color: #407ca7;
+  }
+  a {
+    text-decoration: none;
+  }
+}

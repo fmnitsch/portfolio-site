@@ -1,0 +1,33 @@
+.contact {
+  padding: 5rem 0rem 2rem 0rem;
+  margin-bottom: 5rem;
+  h2 {
+    margin-bottom: 1rem;
+  }
+  a {
+    text-decoration: none;
+  }
+  .social-links {
+    display: flex;
+  }
+  .copy-icon {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 3px;
+    cursor: pointer;
+    position: relative;
+  }
+  .copy-icon:active {
+    top: 1px;
+  }
+  .social-icon {
+    margin: 5px 20px 0px 0px;
+    height: 30px;
+    width: 30px;
+    filter: brightness(0) saturate(100%) invert(44%) sepia(50%) saturate(498%)
+      hue-rotate(162deg) brightness(92%) contrast(92%);
+  }
+  #email {
+    color: #f48f31;
+  }
+}

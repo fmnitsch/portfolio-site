@@ -1,0 +1,27 @@
+.blog-post-container {
+  padding: 3rem;
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    margin-bottom: 1rem;
+  }
+  .title {
+    margin-bottom: 4rem;
+  }
+  p {
+    margin-bottom: 1.5rem;
+    line-height: 1.75rem;
+  }
+  pre {
+    margin-bottom: 1rem;
+    font-size: larger;
+    line-height: 1.25em;
+  }
+  img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+}

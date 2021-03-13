@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { Route } from "react-router-dom";
+import Nav from "./Components/Nav";
+import MobileNav from "./Components/MobileNav";
+//Pages
+import Home from "./Pages/Home";
+import BlogAllPosts from "./Pages/BlogAllPosts";
+import BlogOnePost from "./Pages/BlogOnePost";
+//Styles
+import "./Styles/App.scss";
 
 function App() {
+  const [location, setLocation] = useState("home");
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MobileNav location={location} />
+      <Nav location={location} />
+      <div className="page-container">
+        <Route
+          component={() => <Home setLocation={setLocation} />}
+          path="/"
+          exact
+        />
+        <Route
+          component={() => <BlogAllPosts setLocation={setLocation} />}
+          path="/blog"
+          exact
+        />
+        <Route component={BlogOnePost} path="/blog/:slug" />
+      </div>
     </div>
   );
 }
