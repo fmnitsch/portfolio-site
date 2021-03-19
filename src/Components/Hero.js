@@ -12,7 +12,7 @@ const Hero = ({ setLocation }) => {
     if (inView) {
       setLocation("home");
     }
-  }, [inView]);
+  }, [inView, setLocation]);
 
   return (
     <div className="header-container" id="home" ref={ref}>

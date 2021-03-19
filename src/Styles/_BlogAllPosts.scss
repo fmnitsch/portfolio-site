@@ -1,7 +1,7 @@
 .blog-container {
   img {
-    width: 200px;
-    height: 200px;
+    width: 70%;
+    height: 70%;
     object-fit: cover;
   }
   .blog-header {
@@ -24,16 +24,19 @@
     margin: 5rem auto;
     max-width: 80%;
     display: grid;
-    grid-template-columns: auto auto auto;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
   }
   .single-post-container {
-    margin: 0rem 3rem 3rem 0rem;
+    margin: 0rem auto;
   }
   .image-title-wraper {
-    overflow: hidden;
+    text-align: center;
   }
   .title {
+    margin-top: 8px;
+    font-size: 1.5rem;
+    font-weight: bold;
   }
   p {
     color: #407ca7;

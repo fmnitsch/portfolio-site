@@ -28,7 +28,7 @@ const Contact = ({ setLocation }) => {
     if (inView) {
       setLocation("contact");
     }
-  }, [inView]);
+  }, [inView, setLocation]);
 
   return (
     <section className="contact" id="contact" ref={ref}>

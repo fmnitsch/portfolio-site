@@ -12,7 +12,7 @@ const AboutMe = ({ setLocation }) => {
     if (inView) {
       setLocation("about");
     }
-  }, [inView]);
+  }, [inView, setLocation]);
 
   return (
     <section className="about" id="about" ref={ref}>

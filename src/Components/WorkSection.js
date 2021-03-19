@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 //Images
 import musicApp from "../Images/wv-screenshot.jpg";
@@ -17,7 +18,7 @@ const WorkSection = ({ setLocation }) => {
     if (inView) {
       setLocation("work");
     }
-  }, [inView]);
+  }, [inView, setLocation]);
 
   return (
     <main className="work-section" id="work" ref={ref}>
@@ -50,9 +51,6 @@ const WorkSection = ({ setLocation }) => {
               >
                 <button className="live-demo">Live Demo</button>
               </a>
-              <a target="_blank" rel="noreferrer" href="placeholder">
-                <button className="case-study">Case Study</button>
-              </a>
               <a
                 target="_blank"
                 rel="noreferrer"
@@ -62,6 +60,9 @@ const WorkSection = ({ setLocation }) => {
                   Code <Github className="github" />
                 </button>
               </a>
+              {/* <Link to="/placeholder">
+                <button className="case-study">Case Study</button>
+              </Link> */}
             </div>
           </div>
         </div>
@@ -92,9 +93,6 @@ const WorkSection = ({ setLocation }) => {
               >
                 <button className="live-demo">Live Demo</button>
               </a>
-              <a target="_blank" rel="noreferrer" href="placeholder">
-                <button className="case-study">Case Study</button>
-              </a>
               <a
                 target="_blank"
                 rel="noreferrer"
@@ -104,6 +102,9 @@ const WorkSection = ({ setLocation }) => {
                   Code <Github className="github" />
                 </button>
               </a>
+              <Link to="/blog/movie-night">
+                <button className="case-study">Case Study</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -135,9 +136,6 @@ const WorkSection = ({ setLocation }) => {
               >
                 <button className="live-demo">Live Demo</button>
               </a>
-              <a target="_blank" rel="noreferrer" href="placeholder">
-                <button className="case-study">Case Study</button>
-              </a>
               <a
                 target="_blank"
                 rel="noreferrer"
@@ -147,6 +145,9 @@ const WorkSection = ({ setLocation }) => {
                   Code <Github className="github" />
                 </button>
               </a>
+              <Link to="/blog/jammming">
+                <button className="case-study">Case Study</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -176,9 +177,6 @@ const WorkSection = ({ setLocation }) => {
               >
                 <button className="live-demo">Live Demo</button>
               </a>
-              <a target="_blank" rel="noreferrer" href="placeholder">
-                <button className="case-study">Case Study</button>
-              </a>
               <a
                 target="_blank"
                 rel="noreferrer"
@@ -188,6 +186,9 @@ const WorkSection = ({ setLocation }) => {
                   Code <Github className="github" />
                 </button>
               </a>
+              <Link to="blog/handy-hydraulics">
+                <button className="case-study">Case Study</button>
+              </Link>
             </div>
           </div>
         </div>

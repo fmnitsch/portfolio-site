@@ -2,13 +2,15 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import sanityClient from "../client.js";
 import BlockContent from "@sanity/block-content-to-react";
-import imageUrlBuilder from "@sanity/image-url";
+// import imageUrlBuilder from "@sanity/image-url";
 import Code from "../Components/Code";
 
+/*
 const builder = imageUrlBuilder(sanityClient);
 const urlFor = (source) => {
   return builder.image(source);
 };
+*/
 
 const BlogOnePosts = () => {
   const [postData, setPostData] = useState(null);
@@ -37,14 +39,14 @@ const BlogOnePosts = () => {
       .catch(console.error);
   }, [slug]);
 
-  if (!postData) return <div>Loading...</div>;
+  if (!postData) return <div className="loading">Loading...</div>;
 
   return (
     <div className="blog-post-container">
       <div className="title">
         <h1>{postData.title}</h1>
       </div>
-      <div>
+      <div className="post-content">
         <BlockContent
           blocks={postData.body}
           projectId={sanityClient.clientConfig.projectId}
