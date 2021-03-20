@@ -36,7 +36,7 @@ const BlogAllPosts = ({ setLocation }) => {
             <Link to={"/blog/" + post.slug.current} key={post.slug.current}>
               <div className="single-post-container" key={index}>
                 <div className="image-title-wraper">
-                  <img src={post.mainImage.asset.url} alt="" />
+                  <img src={post.mainImage.asset.url} alt={post.title} />
                   <p className="title">{post.title}</p>
                 </div>
               </div>

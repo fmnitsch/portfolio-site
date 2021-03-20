@@ -56,7 +56,7 @@ const Carousel = () => {
         className="skip"
         src={skip}
         alt="skip fact"
-        /* onClick={skipFact} */
+        onClick={skipFact}
         ref={skipButtonRef}
       />
       <p className="fact" ref={factDisplayRef}></p>
